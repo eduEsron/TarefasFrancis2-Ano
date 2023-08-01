@@ -1,0 +1,20 @@
+import java.util.*;
+public class tarefafrancis {
+
+    static Scanner s = new Scanner(System.in );
+    public static void cadastrar_f(){
+        String nome;
+        double Salario;
+        double SalarioR;
+        System.out.println("Digite seu nome");
+        nome = s.next();
+        System.out.println("Digite seu salario");
+        Salario = s.nextDouble();      
+    }
+    public static void main(String [] args){
+        for(int i = 0;i<3;i++){
+            cadastrar_f();
+        }
+    }
+
+}
