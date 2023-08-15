@@ -1,0 +1,56 @@
+package Triangulo;
+import java.util.*;
+public class Triangulo {
+    double b,h;
+    double l1=0, l2=0, l3=0;
+    double area = 0;
+    double p;
+    Scanner s = new Scanner(System.in);
+ 
+    public void cadastro_dados(){
+        System.out.println("Digite a base: ");
+        b = s.nextDouble();
+        System.out.println("Digite a altura: ");
+        h = s.nextDouble();
+        System.out.println("Digite o lado 1:");
+        l1 = s.nextDouble();
+        System.out.println("Digite o lado 2:");
+        l2 = s.nextDouble();
+        System.out.println("Digite o lado 3:");
+        l3 = s.nextDouble();
+    }
+
+
+
+    public void calcular_area(){
+
+        area = b*h/2;
+
+    }
+
+    public void calcular_perimetro(){
+        p = l1+l2+l3;
+    }
+    public void tipo_triangulo(){
+        if(l1 != l2 && l1 != l3 && l2 != l3)
+        {
+            System.out.println("Triangulo Escaleno");
+        }
+         if(l1 == l2 && l1 == l3 && l2 == l3)
+        {
+            System.out.println("Triangulo Equilatero");
+
+        }        
+         if(l1 == l2 && l1 != l3 || l2 == l3 && l2 != l1)
+         {
+            System.out.println("Triangulo Isoceles");
+         }
+       
+    }
+   public void mostrar_dados(){
+        System.out.println("Perimetro: "+ p);
+        
+
+    }
+
+}
