@@ -1,0 +1,12 @@
+package Triangulo;
+public class App {
+    Triangulo t1, t2;
+    t1 = new Triangulo();
+    t2 = new Triangulo();
+    public static void main(String[] args) {
+        
+        
+    }
+
+
+}
