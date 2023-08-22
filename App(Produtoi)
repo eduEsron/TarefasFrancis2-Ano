@@ -1,0 +1,31 @@
+import java.util.*;
+public class App{
+    public static void main(String[] args) {
+        Produtoi p1, p2, p3, p4, p5;
+        p1 = new Produtoi();
+        p2 = new Produtoi();
+        p3 = new Produtoi();
+        p4 = new Produtoi();
+        p5 = new Produtoi();
+        p1.cadastro();
+        p1.calcular_desconto();
+        p1.calcular_lucro();
+        p1.exibir();
+        p2.cadastro();
+        p2.calcular_desconto();
+        p2.calcular_lucro();
+        p2.exibir();
+        p3.cadastro();
+        p3.calcular_desconto();
+        p3.calcular_lucro();
+        p3.exibir();
+        p4.cadastro();
+        p4.calcular_desconto();
+        p4.calcular_lucro();
+        p4.exibir();
+        p5.cadastro();
+        p5.calcular_desconto();
+        p5.calcular_lucro();
+        p5.exibir();
+    }
+}
