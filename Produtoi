@@ -1,0 +1,43 @@
+
+import java.util.*;
+public class Produtoi {
+    Scanner s = new Scanner(System.in);
+    int code;
+    String nome;
+    double plucro,pdesconto,preco,vlucro,desconto;
+    void cadastro()
+    {
+        System.out.println("Code: ");
+        code = s.nextInt();
+        System.out.println("Nome: ");
+        nome = s.next();
+        System.out.println("Preço: ");
+        preco = s.nextDouble();
+        System.out.println("precentual lucro: ");
+        plucro = s.nextDouble();
+        System.out.println("percentual desconto: ");
+        pdesconto = s.nextDouble();
+    }
+    
+    void calcular_lucro()
+    {
+        vlucro = preco * plucro/100;
+        System.out.println("Desconto: "+vlucro);
+    }
+    void calcular_desconto()
+    {
+        desconto = preco*pdesconto/100;
+        System.out.println("Desconto: "+desconto);
+    }
+    void exibir()
+       {
+         System.out.println("Nome: "+ nome);
+         System.out.println("Code: "+ code);
+         System.out.println("Preço: "+preco);
+         System.out.println("precentual lucro: "+plucro);
+         System.out.println("percentual desconto: "+pdesconto);
+         System.out.println("Desconto: "+desconto);
+         System.out.println("Lucro: "+vlucro);
+    }
+
+}
