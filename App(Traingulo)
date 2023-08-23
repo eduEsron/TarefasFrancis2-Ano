@@ -4,8 +4,17 @@ public class App {
     t1 = new Triangulo();
     t2 = new Triangulo();
     public static void main(String[] args) {
-        
-        
+        t1.cadastro_dados();
+        t2.cadastro_dados();
+        t1.calcular_perimetro();
+        t2.calcular_perimetro();
+        t1.tipo_triangulo();
+        t2.tipo_triangulo();
+        System.out.println("Dados do Triangulo 1: ");
+        t1.mostrar_dados();
+        System.out.println("\nDados do Triangulo 2: ");
+        t2.mostrar_dados();
+
     }
 
 
