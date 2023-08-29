@@ -1,0 +1,29 @@
+public class Cachorro(){
+    String raca;
+    String cor;
+    String porte;
+    Cachorro(){
+        System.out.println("Chamando o construtor sem parametros");
+        this.raca = null;
+        this.cor = null;
+        this.porte = null;
+    }
+    Cachorro(String raca, String cor, String porte){
+        System.out.println("Chamando o construtor com parametros");
+        this.raca = raca;
+        this.cor = cor;
+        this.porte = porte;
+    }
+    void exibir_dados(){
+        System.out.println("Raca: "+ raca);
+        System.out.println("Cor: "+ cor);
+        System.out.println("Porte: "+ porte);
+
+    }
+    void latir(){
+        System.out.println("auuuuuuuuu");
+    }
+
+
+
+}

@@ -1,0 +1,29 @@
+public class Carro(){
+    String marca;
+    String cor;
+    String motor; //Elétrico ou à Combustão
+    Carro(){
+        System.out.println("Chamando o construtor sem parametros");
+        this.marca = null;
+        this.cor = null;
+        this.motor = null;
+    }
+    Carro(String marca, String cor, String motor){
+        System.out.println("Chamando o construtor com parametros");
+        this.marca = marca;
+        this.cor = cor;
+        this.motor = motor;
+    }
+    void exibir_dados(){
+        System.out.println("Marca: "+ marca);
+        System.out.println("Cor: "+ cor);
+        System.out.println("Porte: "+ motor);
+
+    }
+    void buzinar(){
+        System.out.println("bip biiip");
+    }
+
+
+
+}

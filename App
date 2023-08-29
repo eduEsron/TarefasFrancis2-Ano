@@ -1,0 +1,12 @@
+public class App(){
+    public static void main(String[] args){
+        Cachorro dog1,dog2,dog3;
+        dog1 = new Cachorro();
+        dog2 = new Cachorro();
+        dog3 = new Cachorro("Pitbull", "Preto", "Grande");
+        dog1.latir();
+        dog2.latir();
+        dog3.exibir_dados();
+    }
+
+}
